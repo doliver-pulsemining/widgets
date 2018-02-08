@@ -12,3 +12,5 @@ export { default as ckeditor } from "./ck-editor.js";
 export { default as autocomplete } from "./easy-autocomplete.js";
 export { default as prettycheckbox } from "./pretty-checkbox.js";
 export { default as bootstrapslider } from "./bootstrap-slider.js";
+
+export { default as barcode } from "./barcode.js";

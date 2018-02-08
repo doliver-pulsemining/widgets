@@ -34,7 +34,8 @@ var widgets = [
   "ck-editor",
   "easy-autocomplete",
   "pretty-checkbox",
-  "bootstrap-slider"
+  "bootstrap-slider",
+  "barcode"
 ];
 
 var dependencies = {
