@@ -35,7 +35,9 @@ var widgets = [
   "easy-autocomplete",
   "pretty-checkbox",
   "bootstrap-slider",
-  "barcode"
+  "barcode",
+  "camera-image",
+  "picture"
 ];
 
 var dependencies = {

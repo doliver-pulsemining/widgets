@@ -1,24 +1,24 @@
 function init(Survey, $) {
   $ = $ || window.$;
   var widget = {
-    name: "barcode",
-    title: "Barcode Scanner",
-    iconName: "icon-barcode",
-    htmlTemplate: "<pms-widget-barcode></pms-widget-barcode>",
+    name: "camera-image",
+    title: "Image Uploader",
+    iconName: "icon-image",
+    htmlTemplate: "<pms-widget-image></pms-widget-image>",
     widgetIsLoaded: function() {
       return typeof $ === "function"
-        && typeof PmsWidgetBarcode === "function"; //TODO: Polymer has imported and ready to use...
+        && typeof PmsWidgetImage === "function"; //TODO: Polymer has imported and ready to use...
     },
     isFit: function(question) {
-      return question.getType() === "barcode";
+      return question.getType() === "camera-image";
     },
     activatedByChanged: function(activatedBy) {
       if (!this.widgetIsLoaded()) return;
-      Survey.JsonObject.metaData.addClass("barcode", [], null, "empty");
+      Survey.JsonObject.metaData.addClass("camera-image", [], null, "empty");
     },
     afterRender: function(question, el) {
-      if (el.tagName !== 'PMS-WIDGET-BARCODE')
-        el = el.querySelector('pms-widget-barcode');
+      if (el.tagName !== 'PMS-WIDGET-IMAGE')
+        el = el.querySelector('pms-widget-image');
       var isValueChanging = false;
       var updateValueHandler = function() {
         if (isValueChanging) return;

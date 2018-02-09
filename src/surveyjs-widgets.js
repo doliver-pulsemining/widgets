@@ -14,3 +14,5 @@ export { default as prettycheckbox } from "./pretty-checkbox.js";
 export { default as bootstrapslider } from "./bootstrap-slider.js";
 
 export { default as barcode } from "./barcode.js";
+export { default as cameraimage } from "./camera-image.js";
+export { default as picture } from "./picture.js";
